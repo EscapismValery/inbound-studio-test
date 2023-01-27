@@ -1,3 +1,4 @@
+// ------------- Компонент кнопки карточки услуги -------------
 import React from 'react';
 import classes from './Button.module.scss';
 
@@ -7,7 +8,10 @@ const Button = ({ children, service }) => {
 	}
 
 	return (
-		<button className={service?.vip ? classes.buttonVip + " " + classes.button : classes.button} onClick={e => CallToAction(e)}>
+		<button className={service?.vip /* проверка на синий стиль карточки (vip) */
+			? classes.buttonVip + " " + classes.button
+			: classes.button} onClick={e => CallToAction(e)}
+		>
 			{children}
 		</button>
 	)

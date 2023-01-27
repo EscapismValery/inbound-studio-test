@@ -26,5 +26,25 @@
 		letter-spacing: 1.4px;
 		color: #fff;
 	}
-
+	@media screen and (max-width: 1199px) {
+		&Title {
+			width: 617px;
+			font-size: 54px;
+			line-height: 60px;
+			letter-spacing: 1.2px;
+		}
+	}
+	@media screen and (max-width: 991px) {
+		&Title {
+			width: 470px;
+			font-size: 46px;
+			line-height: 48px;
+			letter-spacing: 1px;
+		}
+	}
+	@media screen and (max-width: 767px) {
+		&Title {
+			width: 450px;
+		}
+	}
 }

@@ -1,17 +1,24 @@
+@import '../../styles/mixin';
 .button {
-	width: 160px;
-	height: 40px;
+	// width: 160px;
+	// height: 40px;
+	padding: 10px 35px;
+	display: inline-block;
 	
 	background-color: #00B6DD;
 	transition: all .2s ease-out;
 	margin-top: auto;
+	margin-right: auto;
 
 	font-family: NotoSans, sans-serif;
-	font-size: 13px;
+	@include adaptive('font-size', 13, 12);
+	@include adaptive('line-height', 20, 18);
 	font-weight: 400;
-	line-height: 20px;
 	letter-spacing: 0.8px;
 	color: #fff;
+	@media screen and (max-width: 991px) {
+		padding: 10px 28px;
+	}
 	&:hover {
 		background-color: #029cbf;
 		letter-spacing: 1.3px;

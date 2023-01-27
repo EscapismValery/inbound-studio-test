@@ -1,3 +1,4 @@
+// ------------- Компонент футера страницы со слайдером SWIPER -------------
 import React from 'react';
 import classes from './Footer.module.scss'
 import services from '../../js/servisesList';
@@ -18,15 +19,15 @@ const Footer = () => {
 						prevEl: '.swiper-button-prev',
 					}}
 					spaceBetween={30}
-					breakpoints={{ // брейкпоинты
+					breakpoints={{
 						0: {
-							slidesPerView: 1, // количество слайдов на 1 странице
+							slidesPerView: 1,
 						},
 						576: {
-							slidesPerView: 2, // количество слайдов на 1 странице
+							slidesPerView: 2,
 						},
 						1200: {
-							slidesPerView: 3, // количество слайдов на 1 странице
+							slidesPerView: 3,
 						}
 					}}>
 					<div className="footer__services services">

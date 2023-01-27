@@ -1,12 +1,15 @@
+// ------------- Компонент карточки услуги -------------
 import React from 'react';
 import Button from './Button/Button';
 
 const Service = ({ service }) => {
 	return (
 		<div className='services__service service'>
-			<h4 className={service?.vip ? 'service__category service__category-vip' : 'service__category'}>{service.category}</h4>
+			<h4 className={service?.vip /* проверка на синий стиль карточки (vip) */
+				? 'service__category service__category-vip'
+				: 'service__category'}>{service.category}</h4>
 			{
-				service.image
+				service.image /* проверка на фон карточки (изображение или просто цвет) */
 					?
 					<div className="service__background" style={{ backgroundImage: `url(${service.image})` }}>
 					</div>
