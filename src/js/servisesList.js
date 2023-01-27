@@ -1,6 +1,7 @@
 const services = [
 	{
 		id: 1,
+		vip: false,
 		category: "Category | Marketing",
 		author: "Adam Sandler",
 		title: "Solutions for people like you like people",
@@ -10,6 +11,7 @@ const services = [
 	},
 	{
 		id: 2,
+		vip: false,
 		category: "Category",
 		author: "Adam Sandler",
 		title: "Solutions for people like you like people",
@@ -39,6 +41,7 @@ const services = [
 	},
 	{
 		id: 5,
+		vip: false,
 		category: "Category | Marketing",
 		author: "Adam Sandler",
 		title: "Solutions for people like",
