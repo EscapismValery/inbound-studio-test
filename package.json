@@ -1,5 +1,6 @@
 {
-	"name": "inbound-studio-test",
+	"homepage": "https://escapismvalery.github.io/inbound-test/",
+	"name": "inbound-test",
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {
