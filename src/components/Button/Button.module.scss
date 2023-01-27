@@ -1,0 +1,32 @@
+.button {
+	width: 160px;
+	height: 40px;
+	
+	background-color: #00B6DD;
+	transition: all .2s ease-out;
+	margin-top: auto;
+
+	font-family: NotoSans, sans-serif;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 20px;
+	letter-spacing: 0.8px;
+	color: #fff;
+	&:hover {
+		background-color: #029cbf;
+		letter-spacing: 1.3px;
+	}
+	&:active {
+		background-color: #89e9ff;
+		letter-spacing: 1px;
+	}
+	&Vip {
+		background-color: #081580;
+		&:hover {
+			background-color: #0718b0;
+		}
+		&:active {
+			background-color: #4051e4;
+		}
+	}
+}
